@@ -1,0 +1,80 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="theme-color" content="#000000">
+	<meta name="msapplication-navbutton-color" content="#000000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="HandheldFriendly" content="True">
+	<link rel="stylesheet" href="/assets/css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+	<header class="navbar navbar-light bg-white shadow-sm navbar-expand-md fixed-top">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleNav">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="toggleNav">
+			<ul class="navbar-nav mr-auto">
+				<a class="nav-link" href="/">Головна</a>
+				<li class="nav-item dropdown m-0">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownToggle" data-toggle="dropdown">
+						Матчі
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownToggle">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</li>
+				<a class="nav-link" href="/news.html">Новини</a>
+				<a class="nav-link" href="/fans.html">Відгуки</a>
+				<a class="nav-link" href="/contacts.html">Контакти</a>
+				<a class="nav-link" href="/admin.html">Адмінка</a>
+			</ul>
+		</div>
+				
+		<a class="navbar-brand ml-auto" href="/">
+			<img src="/assets/images/logo.svg" width="30" height="30" alt="">
+		</a>
+	</header>
+	
+	<content class="container d-block">
+		<section class="row">
+			<div class="col-12">
+				<h1 class="text-center mt-5" data-text="Звернення фанатів">Звернення фанатів</h1>
+			</div>
+		</section>
+		
+		<div id="comments__content"></div>
+		
+		<section class="row">
+			<div class="col-12">
+				<div class="alert alert-warning" id="comments__bad-internet" style="display: none;">
+					Відсутнє інтернет-з'єднання. Дані будуть надіслані після того як з'єднання відновиться.
+				</div>
+			</div>
+			<div class="col-md-9">
+				<input class="form-control mb-3" placeholder="Твій коментар" id="comment__name"/>
+				<textarea class="form-control mb-3" rows="7" placeholder="Твій коментар" id="comment__text"></textarea>
+			</div>
+			<div class="col-md-3">
+				<button class="btn btn-block btn-lg btn-outline-primary" id="comment__submit">Надіслати!</button>
+			</div>
+		</section>
+	</content>
+	
+	
+	<footer class="navbar navbar-light bg-white text-center">
+		<a class="nav-link mx-auto" href="https://daki.me">© David Manzhula</a>
+	</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="/assets/js/script.js"></script>
+<script src="/assets/js/fans.js"></script>
+</body>
+</html>
